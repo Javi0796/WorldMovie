@@ -12,14 +12,14 @@ const NavBar = () => {
 					</div>
 					<div className='options'>
 						<Nav className="me-auto">
-							<Nav>
-								<Link to="/">Home</Link>
+							<Nav className='navbar-nav'>
+								<Link className='nav-link' to="/">Home</Link>
 							</Nav>
-							<Nav>
-								<Link to="/Actors">Actors</Link>
+							<Nav className='navbar-nav'>
+								<Link className='nav-link' to="/Actors">Actors</Link>
 							</Nav>
-							<Nav>
-								<Link to="/User">User</Link>
+							<Nav className='navbar-nav'>
+								<Link className='nav-link' to="/User">User</Link>
 							</Nav>
 						</Nav>
 					</div>
