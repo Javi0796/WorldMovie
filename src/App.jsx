@@ -1,11 +1,22 @@
-import { useState } from 'react'
-import NavBar from './components/NavBar'
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Actors from './components/Actors';
+import User from './components/User';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <NavBar></NavBar>
+    <div>
+      <Routes>
+        <Route path='/' element={<NavBar></NavBar>}>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='actors' element={<Actors></Actors>}></Route>
+          <Route path='user' element={<User></User>}></Route>
+          <Route path='*' element={<Home></Home>}></Route>
+        </Route>
+      </Routes>
+    </div>
   )
 }
 
