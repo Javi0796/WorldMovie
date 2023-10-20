@@ -1,0 +1,23 @@
+html, body {
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+}
+
+.navy {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: column;
+    .nav-title {
+        align-self: center;
+    }
+    .options {
+        align-self: flex-start;
+    }
+}
