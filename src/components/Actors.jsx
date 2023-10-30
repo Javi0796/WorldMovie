@@ -2,9 +2,9 @@ import React from 'react';
 
 const Actors = () => {
     return (
-        <div>
+        <section className='actors'>
             Actors
-        </div>
+        </section>
     );
 }
 

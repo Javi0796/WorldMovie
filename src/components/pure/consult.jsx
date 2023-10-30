@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 import ListGen from './ListGen';
 import OPTIONS from '../../models/Options';
 
-const Consult = ( {url} , {consult} ) => {
+const Consult = ( {url , consult} ) => {
   const [object, setObject] = useState();
   useEffect(() => {
     fetch(url , OPTIONS)
       .then(response => response.json())
       .then(response => {
-        setObject(response[0])
-        console.log(response)
+        setObject(response.genres)
       })
       .catch(err => console.error(err))
     },[]);
 
     return (
-      <ListGen obj={object} func={consult}>
-      </ListGen>
+      <>
+        {object && <ListGen list={object} consult={consult}/>}
+      </>
     )
 }
 
