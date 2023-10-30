@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Consult from './pure/Consult'
+import Consult from './pure/Consult';
 
 const Home = () => {
   const [obj, setObj] = useState()
