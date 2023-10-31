@@ -8,7 +8,7 @@ const NavBar = () => {
 			<div>
         <Navbar bg="dark" data-bs-theme="dark" className='navy'>
 					<div className="nav-title">
-						<Navbar.Brand href="#" >WORLD MOVIE</Navbar.Brand>
+						<Navbar.Brand href="#" className='title'><h1>WORLD MOVIE</h1></Navbar.Brand>
 					</div>
 					<div className='options'>
 						<Nav className="me-auto">
