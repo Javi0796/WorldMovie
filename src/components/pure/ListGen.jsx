@@ -10,12 +10,12 @@ const ListGen = ( {list , consult} ) => {
           return aux;
         }) ?? [];
       consult(listO)
-  }, []);
+      }, []);
 
-  return (
-    <>
-    </>
-  )
+    return (
+      <>
+      </>
+    )
 }
 
 ListGen.propTypes = {

@@ -14,6 +14,7 @@ html, body {
 h1 {
     font-size: 1.5em;
 }
+
 .navy {
     display: flex;
     flex-flow: row nowrap;
@@ -45,10 +46,13 @@ h1 {
     flex-direction: column;
 }
 
-.spinLoading {
-    color: green;
-    height: 500;
-    width: 500;
+.media_list_by_gen{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+    margin: 0.5rem 0.7rem;
+    flex-direction: column;
 }
 
 .card_container {
@@ -61,6 +65,9 @@ h1 {
         text-align: center;
         border: 1px solid #ccc;
         background-color:#a5a5a5;
+        .card-list {
+            height: 23em;
+        }
     }
     .card_text {
         height: 10rem;

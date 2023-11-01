@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Consult from './pure/Consult';
 import Genre from '../models/Genre';
 import ReactLoading from "react-loading";
@@ -7,7 +7,7 @@ import MovieListGen from './MovieListGen';
 
 const Home = () => {
   const [obj, setObj] = useState([new Genre()])
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true)
 
   const URL = "https://api.themoviedb.org/3/genre/movie/list?language=en"
 
@@ -22,7 +22,7 @@ const Home = () => {
         <div className='media_genres'>
           <h3>Movie genres</h3>
           {isLoading? 
-            <ReactLoading className="spinLoading" type="spin" color="#0000FF"/> 
+            <div className='spin-container'><ReactLoading className='spinLoading' type="spin" color="#0000FF"/></div> 
             :
             <MovieListGen className='container-fluid' listGen={obj}></MovieListGen>
           }
