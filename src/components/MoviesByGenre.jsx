@@ -22,7 +22,7 @@ const MoviesByGenre = () => {
     return (
         <section className='movie-by-genre'>
             <div className='media_list_by_gen'>
-                <h3>{name} genre</h3>
+                <h3 className='title-genre'>{name} genre</h3>
                 <ConsultMoviesByGenre url={url} consult={getListMovie}></ConsultMoviesByGenre>
                 {isLoading? <ReactLoading className="spinLoading" type="spin" color="#0000FF"/> : <ListByGenre listMovie={listMovie}></ListByGenre> }
             </div>
