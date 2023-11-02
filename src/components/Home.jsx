@@ -19,14 +19,22 @@ const Home = () => {
   return (
     <section className='home'>
         <Consult url={ URL } consult= { getGenres }  ></Consult>
-        <div className='media_genres'>
-          <h3>Movie genres</h3>
-          {isLoading? 
-            <div className='spin-container'><ReactLoading className='spinLoading' type="spin" color="#0000FF"/></div> 
-            :
-            <MovieListGen className='container-fluid' listGen={obj}></MovieListGen>
+        <div
+          className='media_genres'>
+          <h3>Movie
+          genres</h3>
+          {isLoading?
+          <div
+          className='spin-container'><ReactLoading
+          className='spinLoading'
+          type="spin"
+          color="#0000FF"/></div>
+          :
+          <MovieListGen
+          className='container-fluid'
+          listGen={obj}></MovieListGen>
           }
-        </div>
+          </div>
     </section>
   );
 }

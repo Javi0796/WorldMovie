@@ -17,7 +17,7 @@ const ListByGenre = ( { listMovie } ) => {
                 <div className="carrousel-container" >
                     <div className="movie">
                         {listMovie?.map((o,i)=>
-                        <a href='#' key={i} >
+                        <a href='/' className='a-movie' key={i} >
                             <img className='card-movie' src={`https://image.tmdb.org/t/p/original${o.poster}`} alt='card-movie' />    
                         </a>
                         )}
