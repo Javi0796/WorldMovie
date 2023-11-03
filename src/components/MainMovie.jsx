@@ -18,8 +18,16 @@ const MainMovie = ( {movie} ) => {
     return (
         <div className='main-movie-container'>
             <ConsultMovieDetail url={url} consult={getMovieDetail}></ConsultMovieDetail>
-            {isLoading? <ReactLoading className="spinLoading" type="spin" color="#0000FF"/> :
-            <img className='poster-main' src={`https://image.tmdb.org/t/p/original${movieDetail.backdrop}`} alt={`Poster movie ${movie.title}`}></img>
+            {isLoading? <ReactLoading className='spinLoading' type='spin' color='#0000FF'/> :
+            <div className='elements-container'>
+                <img className='poster-main' src={`https://image.tmdb.org/t/p/original${movieDetail.backdrop}`} alt={`Poster movie ${movieDetail.title}`}></img>
+                <div className='elements-main-movie'>
+                    <h5 className='title-movie'>{movieDetail.title}</h5>
+                    <p className='desc-movie'>{movieDetail.descrip}</p>
+                    <p className='duration-bar'>Duration: {movieDetail.runtime} minutes</p>
+                    <a href={movieDetail.page}><i className='bi bi-play-circle play-icon'></i></a>
+                </div>
+                </div>
             }
         </div>
         );
