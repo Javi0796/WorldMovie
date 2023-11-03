@@ -4,7 +4,9 @@ import ListGen from './ListGen';
 import OPTIONS from '../../models/Options';
 
 const Consult = ( {url , consult} ) => {
+  
   const [object, setObject] = useState();
+
   useEffect(() => {
     fetch(url , OPTIONS)
       .then(response => response.json())

@@ -3,9 +3,7 @@ class Movie {
         this.genres = genres,
         this.title = title,
         this.id = id,
-        this.poster = poster,
-        this.date = date,
-        this.descript = descript
+        this.poster = poster
     }
 }
 

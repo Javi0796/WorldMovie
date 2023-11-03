@@ -14,7 +14,7 @@ const MovieListGen = ( { listGen } ) => {
             {listGen?.map((o,i)=>
                 <div className='card_gen' key={i} >
                     {getImg(i)}
-                    <Link  to='/movie-genre-list'
+                    <Link className='link-genre-list' to='/movie-genre-list'
                         state={{ name: o.name, id: o.id }}>
                         <img className='card-img-top' src={image} alt='card' />
                         <div className='card-body' >

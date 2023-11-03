@@ -1,15 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-const ListByGenre = ( { listMovie } ) => {
-
-    // const carrouselContainer = useRef(null)
-    // const row = carrouselContainer.current
-
-    // const scrollRight = () => {
-    //     row.scrollRight += row.offsetWidth;
-    // }
-
+const ListByGenre = ( { listMovie, consult } ) => {
+    
+    const setMainMovie = ((o)=>{
+        consult(o)
+        event.preventDefault()
+    })
     return (
         <div className='movie-list-gen'>
             <div className='carrousel-section-list'>
@@ -17,9 +14,7 @@ const ListByGenre = ( { listMovie } ) => {
                 <div className="carrousel-container" >
                     <div className="movie">
                         {listMovie?.map((o,i)=>
-                        <a href='/' className='a-movie' key={i} >
-                            <img className='card-movie' src={`https://image.tmdb.org/t/p/original${o.poster}`} alt='card-movie' />    
-                        </a>
+                            <img role='button' className='card-movie' src={`https://image.tmdb.org/t/p/w500${o.poster}`} alt='card-movie' key={i} onClick={() => setMainMovie(o)}/>    
                         )}
                     </div>
                 </div>
@@ -32,7 +27,8 @@ const ListByGenre = ( { listMovie } ) => {
 
 
 ListByGenre.propTypes = {
-
+    listMovie: PropTypes.array.isRequired,
+    consult: PropTypes.func.isRequired,
 };
 
 

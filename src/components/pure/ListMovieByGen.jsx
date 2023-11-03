@@ -7,7 +7,7 @@ const ListMovieByGen = ( {object, consult }) => {
     
     useEffect(() => {
         let listMovie = object?.map((o,i)=>{
-            let aux = new Movie(o.genre_ids, o.title, o.id, o.poster_path, o.release_date, o.overview)
+            let aux = new Movie(o.genre_ids, o.title, o.id, o.poster_path)
             return aux
         })
         consult(listMovie)
