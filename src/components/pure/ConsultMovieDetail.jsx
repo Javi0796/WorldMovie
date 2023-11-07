@@ -8,7 +8,10 @@ const ConsultMovieDetail = (({url, consult})=>{
 
     useEffect(()=>{
         fetch(url, OPTIONS)
-            .then(response => response.json())
+            .then(response => {
+                if(!response.ok) throw new Error('Request error')
+                return response.json()
+            })
             .then(response => setObject(response))
             .catch(err => console.error(err))
     },[url])

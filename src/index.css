@@ -112,7 +112,7 @@ p {
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
-    overflow-x: scroll;
+
     .movie {
         display: flex;
         flex-wrap: nowrap;
