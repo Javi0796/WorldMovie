@@ -22,7 +22,7 @@ function ListActors( {obj, consult} ) {
 
 	useEffect(() => {
 		let listActors = obj?.map((o,i) => {
-				let aux = new Actor(o.id, getGender(o.gender), o.name, o.known_for, o.backdrop_path)
+				let aux = new Actor(o.id, getGender(o.gender), o.name, o.known_for, o.profile_path)
 				return aux
 		})
 		consult(listActors)
