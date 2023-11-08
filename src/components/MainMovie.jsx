@@ -25,7 +25,7 @@ const MainMovie = ( {movie} ) => {
                     <h5 className='title-movie'>{movieDetail.title}</h5>
                     <p className='desc-movie'>{movieDetail.descrip}</p>
                     <p className='duration-bar'>Duration: {movieDetail.runtime} minutes</p>
-                    <a href={movieDetail.page}><i className='bi bi-play-circle play-icon'></i></a>
+                    {movieDetail.page && <a href={movieDetail.page} target='_blank' rel='noreferrer'><i className='bi bi-play-circle play-icon'></i></a>}
                 </div>
                 </div>
             }

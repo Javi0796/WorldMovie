@@ -6,8 +6,8 @@ const ListGen = ( {list , consult} ) => {
 
   useEffect(() => {
       let listO = list?.map((o, i) => {
-          let aux = new Genre(o.id, o.name);
-          return aux;
+          let aux = new Genre(o.id, o.name)
+          return aux
         }) ?? [];
       consult(listO)
       }, []);

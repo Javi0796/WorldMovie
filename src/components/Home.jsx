@@ -9,7 +9,7 @@ const Home = () => {
   const [obj, setObj] = useState([new Genre()])
   const [isLoading, setIsLoading] = useState(true)
 
-  const URL = "https://api.themoviedb.org/3/genre/movie/list?language=en"
+  const URL = 'https://api.themoviedb.org/3/genre/movie/list?language=en'
 
   const getGenres = ( object ) => {
     setObj(object)
