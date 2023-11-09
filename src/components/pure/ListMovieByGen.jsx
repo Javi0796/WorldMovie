@@ -4,7 +4,7 @@ import Movie from '../../models/Movie';
 
 
 const ListMovieByGen = ( {object, consult }) => {
-
+    console.log(object)
     useEffect(() => {
         let listMovie = object?.map((o,i)=>{
             let aux = new Movie(o.genre_ids, o.title, o.id, o.poster_path)

@@ -20,7 +20,7 @@ const Home = () => {
     <section className='home'>
         <Consult url={ URL } consult= { getGenres }  ></Consult>
         <div
-          className='media_genres'>
+          className='media_page'>
           <h3>Movie
           genres</h3>
           {isLoading?

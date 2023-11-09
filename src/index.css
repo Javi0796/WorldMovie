@@ -53,7 +53,7 @@ h3 {
     font-size: 1.2em;
     }
 
-.media_genres {
+.media_page {
     display: flex;
     height: 100vh;
     padding: 1rem;
@@ -201,6 +201,26 @@ p {
             .play-icon{
                 font-size: 5rem;
                 color: #5e5e5e;
+            }
+        }
+    }
+
+    .button-bar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        padding-bottom: 0.5em;
+        .page-button {
+            font-size: 1.8em;
+            padding: 0.4em;
+            margin-right: 0.3em;
+            width: 2em;
+            height: 2em;
+            cursor: pointer;
+            border-radius: 50%;
+            .page-button:hover{
+                background-color: white;
             }
         }
     }

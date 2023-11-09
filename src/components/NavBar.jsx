@@ -12,7 +12,7 @@ const NavBar = () => {
 						</div>
 						<div className='options'>
 							<Nav className="me-auto">
-								<Nav className='navbar-nav'>
+								<Nav className='navbar-nav active'>
 									<Link className='nav-link' to="/">Home</Link>
 								</Nav>
 								<Nav className='navbar-nav'>

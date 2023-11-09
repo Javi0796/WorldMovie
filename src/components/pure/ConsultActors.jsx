@@ -13,7 +13,7 @@ const ConsultActors = (  { url, consult } ) => {
         })
       .then(response => setobject(response.results))
       .catch(err => console.error(err))
-    }, [])
+    }, [url])
     
   return(
       <>
