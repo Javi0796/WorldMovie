@@ -18,9 +18,6 @@ const NavBar = () => {
 								<Nav className='navbar-nav'>
 									<Link className='nav-link' to="/Actors">Actors</Link>
 								</Nav>
-								<Nav className='navbar-nav'>
-									<Link className='nav-link' to="/User">User</Link>
-								</Nav>
 							</Nav>
 						</div>
 			</Navbar>

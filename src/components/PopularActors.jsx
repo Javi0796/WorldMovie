@@ -9,7 +9,7 @@ const PopularActors = ( { listActors } ) => {
         <div className='card_container'>
             {listActors?.map((o,i)=>
                 <div className='card_gen' key={i} >
-                    <Link className='link-genre-list' to='#'
+                    <Link className='link-genre-list' to='/Actors/Main_actor'
                         state={{ name: o.name, id: o.id }}>
                         <img className='card-img-top' src={`https://image.tmdb.org/t/p/w500${o.profile}`} alt='card' />
                         <div className='card-body' >
